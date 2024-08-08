@@ -1,0 +1,24 @@
+uuid: ecad985c-d5bb-4817-9cc8-fccac7ccb4a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_list
+  module:
+    - views
+  theme:
+    - bigznews
+id: views_block__news_list_block_1_4
+theme: bigznews
+region: featured_top
+weight: 0
+provider: null
+plugin: 'views_block:news_list-block_1'
+settings:
+  id: 'views_block:news_list-block_1'
+  label: 'Featured Top'
+  label_display: visible
+  provider: views
+  views_label: 'Featured Top'
+  items_per_page: none
+visibility: {  }

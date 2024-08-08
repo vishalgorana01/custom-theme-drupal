@@ -1,0 +1,22 @@
+uuid: bb33c15f-1473-4625-88cf-756e8ca701dc
+langcode: en
+status: false
+dependencies:
+  theme:
+    - bigznews
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: bigznews_primary_local_tasks
+theme: bigznews
+region: header
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

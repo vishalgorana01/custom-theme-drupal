@@ -1,0 +1,22 @@
+uuid: 628675af-5549-4249-ada3-efeced52a68f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bigznews
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: bigznews_content
+theme: bigznews
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

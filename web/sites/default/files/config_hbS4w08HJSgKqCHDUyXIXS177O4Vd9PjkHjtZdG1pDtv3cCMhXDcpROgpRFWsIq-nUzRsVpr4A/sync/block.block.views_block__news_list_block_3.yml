@@ -1,0 +1,24 @@
+uuid: e5ad3f86-184f-468d-be73-6a51a8135d1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_list
+  module:
+    - views
+  theme:
+    - bigznews
+id: views_block__news_list_block_3
+theme: bigznews
+region: latest_news
+weight: 0
+provider: null
+plugin: 'views_block:news_list-block_3'
+settings:
+  id: 'views_block:news_list-block_3'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

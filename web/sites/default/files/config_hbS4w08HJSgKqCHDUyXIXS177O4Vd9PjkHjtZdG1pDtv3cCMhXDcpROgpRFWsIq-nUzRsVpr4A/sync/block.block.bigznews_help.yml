@@ -1,0 +1,22 @@
+uuid: c857cb69-302a-49ca-8079-72a33536c837
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - bigznews
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: bigznews_help
+theme: bigznews
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

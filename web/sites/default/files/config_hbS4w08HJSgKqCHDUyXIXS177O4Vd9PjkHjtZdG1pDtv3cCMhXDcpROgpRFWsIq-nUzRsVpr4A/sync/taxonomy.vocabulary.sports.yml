@@ -1,0 +1,8 @@
+uuid: 86e115e0-9e48-421d-8147-041c7b177447
+langcode: en
+status: true
+dependencies: {  }
+name: News
+vid: sports
+description: 'This is vocabulary related to news.'
+weight: 0

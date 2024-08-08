@@ -1,0 +1,20 @@
+uuid: 65af652f-62ea-4c02-8be0-630045b0cc01
+langcode: en
+status: false
+dependencies:
+  module:
+    - slider
+  theme:
+    - bigznews
+id: customslider
+theme: bigznews
+region: header
+weight: 0
+provider: null
+plugin: custom_slider
+settings:
+  id: custom_slider
+  label: 'Custom Slider'
+  label_display: visible
+  provider: slider
+visibility: {  }

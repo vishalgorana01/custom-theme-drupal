@@ -1,0 +1,68 @@
+uuid: 75b5c345-9940-48b5-b2eb-be4f2f293ee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.body
+    - field.field.node.news.field_category
+    - field.field.node.news.field_cover_image
+    - field.field.node.news.field_incident_date
+    - field.field.node.news.field_news_headline
+    - field.field.node.news.field_sub_image_1
+    - field.field.node.news.field_sub_image_2
+    - field.field.node.news.field_sub_image_3
+    - field.field.node.news.field_sub_image_4
+    - node.type.news
+  module:
+    - image
+    - text
+    - user
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cover_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_incident_date:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_news_headline:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_category: true
+  field_sub_image_1: true
+  field_sub_image_2: true
+  field_sub_image_3: true
+  field_sub_image_4: true
+  links: true

@@ -1,0 +1,18 @@
+uuid: c2ffa802-5f00-4f2e-a0da-984e65f9a12b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bigznews
+id: pagetitle
+theme: bigznews
+region: subheader
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

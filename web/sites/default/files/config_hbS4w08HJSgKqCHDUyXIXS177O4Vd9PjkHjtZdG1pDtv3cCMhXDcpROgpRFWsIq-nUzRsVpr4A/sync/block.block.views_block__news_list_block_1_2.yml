@@ -1,0 +1,24 @@
+uuid: 07684620-deab-4e70-b834-7f5cd5f86844
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.news_list
+  module:
+    - views
+  theme:
+    - bigznews
+id: views_block__news_list_block_1_2
+theme: bigznews
+region: header
+weight: -9
+provider: null
+plugin: 'views_block:news_list-block_1'
+settings:
+  id: 'views_block:news_list-block_1'
+  label: 'Latest News'
+  label_display: visible
+  provider: views
+  views_label: 'Latest News'
+  items_per_page: none
+visibility: {  }

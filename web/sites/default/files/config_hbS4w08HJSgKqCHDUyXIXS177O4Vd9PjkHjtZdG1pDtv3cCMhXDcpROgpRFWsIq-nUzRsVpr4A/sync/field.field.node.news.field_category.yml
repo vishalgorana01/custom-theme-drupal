@@ -1,0 +1,29 @@
+uuid: 49ccfe03-b182-48d6-9628-1026289a2a4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.news
+    - taxonomy.vocabulary.sports
+id: node.news.field_category
+field_name: field_category
+entity_type: node
+bundle: news
+label: Category
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sports: sports
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: sports
+field_type: entity_reference
