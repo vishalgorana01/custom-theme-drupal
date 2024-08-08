@@ -1,0 +1,55 @@
+<div class="swiper hero_swiper">
+    <div class="swiper-wrapper">
+        {% for item in data %}
+        <div class="swiper-slide">
+            <div class="cover_image">
+                <img src={{ item.cover_image }} alt="loading error" />
+                <span class="custom_overlay">
+                    <span class="cover_image_breaking_news">Breaking News</span>
+                    <span class="cover_image_breaking_news_title">{{item.title}}</span>
+                </span>
+            </div>
+            <div class="sub_images">
+                <div class="sub_image_1">
+                    <img src={{ item.sub_image_1 }} alt="loading error" />
+                    <span class="custom_overlay">
+                        <span class="sub_images_breaking_news">Breaking News</span>
+                        <span class="sub_images_breaking_news_title">{{item.title}}</span>
+                    </span>
+                </div>
+
+                <div class="sub_image_2">
+                    <img src={{ item.sub_image_2 }} alt="loading error" />
+                    <span class="custom_overlay">
+                        <span class="sub_images_breaking_news">Breaking News</span>
+                        <span class="sub_images_breaking_news_title">{{item.title}}</span>
+                    </span>
+
+                </div>
+                <div class="sub_image_3">
+                    <img src={{ item.sub_image_3 }} alt="loading error" />
+                    <span class="custom_overlay">
+                        <span class="sub_images_breaking_news">Breaking News</span>
+                        <span class="sub_images_breaking_news_title">{{item.title}}</span>
+                    </span>
+
+                </div>
+                <div class="sub_image_4">
+                    <img src={{ item.sub_image_4 }} alt="loading error" />
+                    <span class="custom_overlay">
+                        <span class="sub_images_breaking_news">Breaking News</span>
+                        <span class="sub_images_breaking_news_title">{{item.title}}</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>

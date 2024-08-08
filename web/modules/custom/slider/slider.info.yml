@@ -1,0 +1,9 @@
+name: Custom Slider
+type: module
+description: Provides Block for slider
+package: CUSTOM
+version: '1.0'
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:block

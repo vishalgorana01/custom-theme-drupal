@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Olivero's theme override to display the header region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+<!-- Topbar Start -->
+<div class="container-fluid d-none d-lg-block">
+    <div class="row align-items-center bg-dark">
+        <div class="col-lg-9">
+            <nav class="navbar navbar-expand-sm bg-dark p-0">
+                <ul class="navbar-nav ml-n2">
+                    <li class="nav-item border-right border-secondary">
+                        <a class="nav-link text-body small" href="#">Monday, January 1, 2045</a>
+                    </li>
+                    <li class="nav-item border-right border-secondary">
+                        <a class="nav-link text-body small" href="#">Advertise</a>
+                    </li>
+                    <li class="nav-item border-right border-secondary">
+                        <a class="nav-link text-body small" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body small" href="#">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-3 text-right d-none d-md-block">
+            <nav class="navbar navbar-expand-sm bg-dark p-0">
+                <ul class="navbar-nav ml-auto mr-n2">
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#"><small class="fab fa-twitter"></small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#"><small class="fab fa-facebook-f"></small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#"><small class="fab fa-linkedin-in"></small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#"><small class="fab fa-instagram"></small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#"><small class="fab fa-google-plus-g"></small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#"><small class="fab fa-youtube"></small></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->

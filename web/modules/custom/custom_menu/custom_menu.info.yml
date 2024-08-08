@@ -1,0 +1,5 @@
+name: Custom Menu
+type: module
+description: 'A module to preprocess the main menu for Twig templates.'
+package: CUSTOM
+core_version_requirement: ^8 || ^9

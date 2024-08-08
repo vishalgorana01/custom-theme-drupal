@@ -1,0 +1,18 @@
+global:
+  version: 1.x
+  css:
+    theme:
+      assets/css/style.min.css: {}
+      assets/css/bootstrap.min.css: {}
+      https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css: {type: external}
+
+  js:
+    assets/js/bootstrap.min.js: {}
+    https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js: {type: external}
+
+custom:
+  css:
+    theme:
+      assets/css/global.css: {}
+  js:
+    assets/js/global.js: {}

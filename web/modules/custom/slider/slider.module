@@ -1,0 +1,12 @@
+<?php
+
+function slider_theme () {
+    return [
+        'slider' => 
+        [
+            'variables' => [
+                'data' => NULL
+            ]
+        ]
+    ];
+}

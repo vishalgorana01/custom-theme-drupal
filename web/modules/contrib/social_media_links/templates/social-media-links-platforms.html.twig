@@ -1,0 +1,36 @@
+{#
+/**
+* @ingroup themeable
+*/
+#}
+
+{%
+set classes = [
+'social-media-links--platforms',
+'platforms',
+appearance.orientation == 'h' ? 'inline horizontal' : 'vertical',
+]
+%}
+
+{% set bgColors = ['#39569E', '#52AAF4', '#0185AE', '#C8359D', '#DC472E', '#055570'] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {% for platform in platforms %}
+  <a class="py-2 px-3 social-media-link-icon--{{ platform.id }} d-flex align-items-center justify-content-start w-100 text-white text-decoration-none mb-3"
+    href="{{ platform.url }}" {{ platform.attributes }} style="background-color: {{ bgColors[loop.index0 % bgColors|length] }};" >
+    <span class="social_media_icons">
+      {{ platform.element }}
+    </span>
+    <span class="font-weight-medium">12,345 Fans</span>
+  </a>
+
+  {% endfor %}
+  </div>
+
+
+  {#
+  <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #39569E;">
+    <i class="fab fa-facebook-f text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+    <span class="font-weight-medium">12,345 Fans</span>
+  </a>
+  #}
